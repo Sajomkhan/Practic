@@ -52,10 +52,10 @@ header{
 }
 
 .banar-container{
-  height: 100vh;
+  height: 80vh;
 }
 
-#banner h1{
+.banner h1{
   font-family: 'Caveat', cursive;
   font-size: 5rem;
   font-weight: bold;
@@ -66,5 +66,3 @@ header{
   padding: 50px;
   border-radius: 5px;  
 }
-
-
