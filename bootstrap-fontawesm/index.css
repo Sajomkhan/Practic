@@ -55,14 +55,46 @@ header{
   height: 80vh;
 }
 
-.banner h1{
+#banner h1{
   font-family: 'Caveat', cursive;
   font-size: 5rem;
   font-weight: bold;
   color: rgb(176, 142, 57);
-  background-image: linear-gradient(rgba(24, 118, 225, 0.95),
+  background-image: linear-gradient(rgba(24, 78, 225, 0.95),
             rgba(65, 81, 187, 0.95)), url("/assets/images/resister-img.jpg");  
   color: white;
   padding: 50px;
   border-radius: 5px;  
+}
+
+/* blockquote */
+
+#customer-review{
+  background-color: rgb(212, 233, 251);
+}
+
+/* features section */
+
+#feature{
+  padding: 5% 10%;
+}
+
+#feature .feature-col{
+  border: 2px solid #1d55fd;
+  padding: 5% 10%;
+  border-radius: 5px;
+  margin: 7%;
+  transition: 0.4s;
+}
+
+#feature .feature-col:hover{
+ transform: scale(1.05);
+ box-shadow: 2px 5px 10px grey;
+}
+
+#feature i{
+  background-color: #1d55fd;
+  color: white;
+  padding: 10px;
+  margin-bottom: 10px;
 }
