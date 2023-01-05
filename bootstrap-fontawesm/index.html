@@ -5,21 +5,27 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- fontawesom -->
+
+  <!----------------- fontawesom ----------------->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- gootle Font -->
+
+  <!----------------- gootle Font -------------->
   <link
     href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&family=Satisfy&family=Varela&family=Varela+Round&display=swap"
     rel="stylesheet">
-  <!-- CSS file link -->
+
+  <!--------------- CSS file link ----------------->
   <link rel="stylesheet" href="index.css">
-  <!-- Bootstrap -->
+
+  <!----------------- Bootstrap ------------------->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
   <title>Bootstrap</title>
+
+  <!----------------- favicon ------------------->
   <link rel="icon" type="image/x-icon" href="/assets/logo/favicon-dot-v-png.png">
 </head>
 
@@ -28,7 +34,7 @@
     <header>
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <!-- brand-logo -->
+          <!------------------ brand-logo ------------->
           <a class="navbar-brand" href="#">
             <img src="/assets/logo/logo-dot-v-png.png" alt="logo">
           </a>
@@ -36,10 +42,10 @@
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span><i class="fas fa-bars"></i></span>
           </button>
-          <!-- lavbar link -->
-          <div class="collapse navbar-collapse justify-content-center me-lg-5" id="navbarNav">
+          <!--------------- lavbar link ------------------->
+          <div class="collapse navbar-collapse justify-content-center ms-lg-5 ps-lg-5" id="navbarNav">
             <ul class="navbar-nav ">
-              <li class="nav-item">
+              <li class="nav-item active">
                 <a class="nav-link text-center text-md-center" href="#">Home</a>
               </li>
               <li class="nav-item">
@@ -52,34 +58,31 @@
                 <a class="nav-link text-center text-md-center" href="#">Contact</a>
               </li>
             </ul>
-            <!-- search bar -->
-            <form class="d-flex ms-lg-5">
+            <!---------------- search bar --------------->
+            <form class="d-flex ms-lg-auto">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
           </div>
         </div>
       </nav>
-      <!-- banner for header section-->
+
+      <!---------------------- banner for header section------------------------->
+
       <section id="banner">
         <div class="banar-container d-flex justify-content-center align-items-center">
           <div class="banner-contents text-center">
             <h1 class="head-line mb-5">MERN Full Stack Web Disign</h1>
-            <button 
-                class="btn btn-success btn-lg me-3"
-                onclick="location.href='https://drive.google.com/drive/folders/1SntRPtOow54yhXkYnX-Yn6b8CDT5ftd3?usp=share_link'"
-                >
-                <i class="fas fa-play me-2"></i>
-                Learn More
+            <button class="btn btn-success btn-lg me-3"
+              onclick="location.href='https://drive.google.com/drive/folders/1SntRPtOow54yhXkYnX-Yn6b8CDT5ftd3?usp=share_link'">
+              <i class="fas fa-play me-2"></i>
+              Learn More
             </button>
             <!-- tooltip -->
-            <button 
-              class="btn btn-primary btn-lg" 
-              data-bs-toggle="tooltip" data-bs-placement="right"
+            <button class="btn btn-primary btn-lg" data-bs-toggle="tooltip" data-bs-placement="right"
               title="Click here to see information"
               onclick="window.open('https://drive.google.com/drive/folders/1SntRPtOow54yhXkYnX-Yn6b8CDT5ftd3?usp=share_link')"
-              class="request-callback"
-              >
+              class="request-callback">
               <i class="fab fa-youtube me-2"></i>
               Subscribe
             </button>
@@ -87,15 +90,55 @@
         </div>
       </section>
     </header>
-    <!-- blockquote-->
+
+    <!------------------ toggleable dynamic feature tab --------------------->
+
+    <div class="dynamic-feature w-50 d-block m-auto mb-5">
+      <ul class="nav justify-content-center mb-3">
+        <li class="nav-item"><a class="nav-link active" href="#frontend" data-bs-toggle="tab">Frontend</a></li>
+        <li class="nav-item"><a class="nav-link" href="#backend" data-bs-toggle="tab">Backend</a></li>
+        <li class="nav-item"><a class="nav-link" href="#fullstack" data-bs-toggle="tab">Fullstack</a></li>
+        <li class="nav-item"><a class="nav-link" href="#graphic" data-bs-toggle="tab">Graphic design</a></li>
+      </ul>
+      <div class="tab-content">
+        <div id="frontend" class="tab-pane active">
+          <p><b>(1)</b> Frontend developer ipsum dolor sit amet, consectetur adipisicing elit. Excepturi distinctio
+            quisquam veritatis sit deleniti, ut a omnis quam adipisci ad? Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Inventore quibusdam nemo aspernatur tempore, perferendis ducimus quasi quam pariatur natus
+            hic vero et optio, ullam ipsa nisi eos veniam tenetur aut?</p>
+        </div>
+        <div id="backend" class="tab-pane fade">
+          <p><b>(2)</b> Backend developer ipsum dolor sit amet, consectetur adipisicing elit. Excepturi distinctio
+            quisquam veritatis sit deleniti, ut a omnis quam adipisci ad? Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Inventore quibusdam nemo aspernatur tempore, perferendis ducimus quasi quam pariatur natus
+            hic vero et optio, ullam ipsa nisi eos veniam tenetur aut?</p>
+        </div>
+        <div id="fullstack" class="tab-pane fade">
+          <p><b>(3)</b> Full developer stack ipsum dolor sit amet, consectetur adipisicing elit. Excepturi distinctio
+            quisquam veritatis sit deleniti, ut a omnis quam adipisci ad? Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Inventore quibusdam nemo aspernatur tempore, perferendis ducimus quasi quam pariatur natus
+            hic vero et optio, ullam ipsa nisi eos veniam tenetur aut?</p>
+        </div>
+        <div id="graphic" class="tab-pane fade">
+          <p><b>(4)</b> UI/UX and Grapghic Design ipsum dolor sit amet, consectetur adipisicing elit. Excepturi
+            distinctio
+            quisquam veritatis sit deleniti, ut a omnis quam adipisci ad? Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Inventore quibusdam nemo aspernatur tempore, perferendis ducimus quasi quam pariatur natus
+            hic vero et optio, ullam ipsa nisi eos veniam tenetur aut?</p>
+        </div>
+      </div>
+    </div>
+
+    <!----------------------------- blockquote------------------------------->
+
     <main>
       <section id="customer-review" class="py-5 px-3">
         <div class="customer-title text-center mb-5">
           <h3>Customer Review</h3>
-        </div>      
+        </div>
         <div class="row">
           <div class="col-md-6 col-lg-4 text-center">
-            <blockquote class="blockquote">
+            <blockquote class="blockquote mx-3">
               <i class="fa-3x fas fa-user-circle text-success"></i>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi sequi velit itaque corporis alias
                 commodi et nisi, dolores ex consequuntur! In this <span class="badge bg-secondary">New</span> lesson we
@@ -106,7 +149,7 @@
             </blockquote>
           </div>
           <div class="col-md-6 col-lg-4 text-center">
-            <blockquote class="blockquote">
+            <blockquote class="blockquote mx-3">
               <i class="fa-3x fas fa-user-circle text-success"></i>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi sequi velit itaque corporis alias
                 commodi et nisi, dolores ex consequuntur! In this <span class="badge bg-secondary">New</span> lesson we
@@ -117,40 +160,45 @@
             </blockquote>
           </div>
           <div class="col-md-6 col-lg-4 text-center">
-            <blockquote class="blockquote">
+            <blockquote class="blockquote mx-3">
               <i class="fa-3x fas fa-user-circle text-success"></i>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi sequi velit itaque corporis alias
                 commodi et nisi, dolores ex consequuntur! In this <span class="badge bg-secondary">New</span> lesson we
                 will learn about <abbr title="bootstrap">bs</abbr></p>
               <footer class="blockquote-footer mt-1">
                 Saiful Ajom Khan <cite>GitHub</cite>
-              </footer>            
+              </footer>
             </blockquote>
           </div>
         </div>
       </section>
-      <!-- feature section -->
+
+      <!-------------------------------- feature section ------------------------------->
+
       <section id="feature" class="text-center">
         <div class="row">
           <div class="col-lg-4 d-block d-lg-flex">
             <div class="feature-col">
               <i class="fas fa-hand-holding-usd fa-3x rounded-circle"></i>
               <h5 class="font-weight-bold">Free to use</h5>
-              <p class="small">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias aliquam ipsam omnis atque totam quos perspiciatis quisquam. Commodi, iste autem.</p>
+              <p class="small">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias aliquam ipsam omnis atque
+                totam quos perspiciatis quisquam. Commodi, iste autem.</p>
             </div>
           </div>
           <div class="col-lg-4 d-block d-lg-flex">
             <div class="feature-col">
               <i class="fas fa-hand-holding-usd fa-3x rounded-circle"></i>
               <h5 class="font-weight-bold">Free to use</h5>
-              <p class="small">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias aliquam ipsam omnis atque totam quos perspiciatis quisquam. Commodi, iste autem.</p>
+              <p class="small">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias aliquam ipsam omnis atque
+                totam quos perspiciatis quisquam. Commodi, iste autem.</p>
             </div>
           </div>
           <div class="col-lg-4 d-block d-lg-flex">
             <div class="feature-col">
               <i class="fas fa-hand-holding-usd fa-3x rounded-circle"></i>
               <h5 class="font-weight-bold">Free to use</h5>
-              <p class="small">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias aliquam ipsam omnis atque totam quos perspiciatis quisquam. Commodi, iste autem.</p>
+              <p class="small">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias aliquam ipsam omnis atque
+                totam quos perspiciatis quisquam. Commodi, iste autem.</p>
             </div>
           </div>
         </div>
@@ -158,7 +206,19 @@
 
     </main>
 
-    <footer>
+    <!-------------------------------- footer ------------------------------->
+
+    <footer class="bg-dark h-25">
+      <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo iusto quos eos reprehenderit vero libero
+          natus quaerat molestias hic sit cum consequatur inventore asperiores, nulla, fugit commodi adipisci nisi
+          veniam, odio aspernatur. Nemo recusandae, labore accusamus facilis repellendus eum in, iusto non commodi enim
+          corrupti dolore dolores, distinctio porro quas dolor inventore assumenda saepe quidem. Ducimus, quis! Minus
+          veritatis asperiores repellat maxime tempora consectetur est eius quaerat id voluptatum, dicta ducimus sint
+          aspernatur dolore. Nam, quisquam facere! Doloribus quaerat quas aliquid a doloremque eaque est minima facere
+          provident architecto et nobis odit ipsum eum ea, officiis nulla corrupti saepe repellat.</p>
+      </div>
+
     </footer>
   </div>
 
