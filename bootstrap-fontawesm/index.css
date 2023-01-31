@@ -55,8 +55,8 @@ p {
   /* transform: scale(1.1); */
 }
 
-.navbar-nav>li>a .active,
-.navbar-nav>li>a:focus {
+.navbar-nav li .active,
+.navbar-nav li:focus {
   background-color: var(--grey);
 }
 
