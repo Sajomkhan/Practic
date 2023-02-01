@@ -20,12 +20,12 @@
 // }
 
 
-// const display = document.getElementById('display');
+const display = document.getElementById('display');
 
-// const getData = () => {
-//     fetch("http://127.0.0.1:5500/data.txt")
-//     .then(res => res.text())
-//     .then(data => {
-//         display.innerText = data;
-//     })
-// }
+const getData = () => {
+    fetch('http://127.0.0.1:5500/fetch-data/data.txt')
+    .then(res => res.text())
+    .then(data => {
+        display.innerText = data
+    })
+}
